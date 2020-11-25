@@ -1,3 +1,9 @@
+data_GRAINet_demo/
+output*
+.ipynb_checkpoints/
+*.tif
+*.npz
+*.npy
 *.png
 *.jpg
 *.pdf
