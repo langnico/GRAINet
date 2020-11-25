@@ -9,17 +9,15 @@ Along with the code, we release a small subset of the dataset used in the study,
 
 ## Getting Started
 
-Clone this repository to your local machine. In your terminal type:
+1) Clone this repository to your local machine. In your terminal type:
+    ```
+    git clone URL
+    ```
+   
+2) Download the data from [here](https://share.phys.ethz.ch/~pf/nlangdata/GRAINet_demo_data.zip).
 
-```
-git clone URL
-```
-
-Download the data from [here](TODO).
-
-Move the data folder into the GRAINet directory `DL_tutorial_RS/`. The directory tree should look like this:
-* GRAINet/
-	* data/
+    Move the data folder into the GRAINet directory. The directory tree should look like this:
+    GRAINet/data/
 
 
 ## Prerequisites
@@ -33,7 +31,7 @@ The following instructions will guide you to install:
 * gdal
 
 ## Installing
-We propose to install python via anaconda.
+We recommend to install python via anaconda and to create a new conda environment.
 
 1) [Install Anaconda](https://docs.anaconda.com/anaconda/install/) and read the [Anaconda tutorial](https://conda.io/docs/user-guide/getting-started.html)
 
@@ -88,6 +86,11 @@ h5py.__version__
 '2.9.0'
 ```
 
+## Run the notebook
+Open the jupyter notebook:
+```
+jupyter notebook GRAINet_demo_dm_regression.ipynb
+```
 
 ## Citation
 
