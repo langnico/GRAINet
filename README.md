@@ -18,8 +18,7 @@ Along with the code, we release a small subset of the dataset used in the study,
 
     Move the data folder into the GRAINet directory. The directory tree should look like this: `GRAINet/data_GRAINet_demo/`
 
-
-## Prerequisites`
+## Prerequisites
 This code uses keras with a tensorflow backend. GDAL is used to predict for georeferenced orthophotos.
 The following instructions will guide you to install:
 
