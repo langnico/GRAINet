@@ -89,16 +89,12 @@ def run_prediction_orthophoto(args):
 
     tiles, pred_shape = get_tiles(ds=ds, tile_rows=args.img_rows, tile_cols=args.img_cols)
 
-    # load original data for preprocessing with the training MEAN and STD
-    data = helper.wrapper_make_data_split(experiment_type=args.experiment_type,
-                                          data_npz_path=args.data_npz_path,
-                                          test_bank_name=args.test_bank_name,
-                                          test_fold_index=args.test_fold_index,
-                                          randCV_indices_path=args.randCV_indices_path,
-                                          volume_weighted=args.volume_weighted)
+    # load preprocessing statistics
+    train_MEAN = np.load(os.path.join(args.experiment_dir, 'train_MEAN.npy'))
+    train_STD = np.load(os.path.join(args.experiment_dir, 'train_STD.npy'))
 
-    X_test_prepro = prepro.normalize_images_per_channel(images=tiles, mean_train=data['MEAN_train'],
-                                                        std_train=data['STD_train'], out_dtype='float32')
+    X_test_prepro = prepro.normalize_images_per_channel(images=tiles, mean_train=train_MEAN, std_train=train_STD,
+                                                        out_dtype='float32')
 
     # initialize the model with input of proper shape
     input_shape = (int(args.img_rows), int(args.img_cols), args.channels)  # for tensorflow: channels last
