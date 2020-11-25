@@ -51,6 +51,7 @@ We recommend to install python via anaconda and to create a new conda environmen
     conda install matplotlib
     conda install keras=2.2.4
     conda install h5py=2.9.0
+    conda install scikit-image
     ```
     
 5) Install ***tensorflow*** with anaconda or follow the [official tensorflow installation instructions (e.g. with pip)](https://www.tensorflow.org/install/pip)
