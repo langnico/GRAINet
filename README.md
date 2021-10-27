@@ -95,17 +95,19 @@ jupyter notebook GRAINet_demo_dm_regression.ipynb
 
 If you use this code please cite our paper: 
 
-*Lang, Nico, Andrea Irniger, Agnieszka Rozniak, Roni Hunziker, Jan Dirk Wegner, and Konrad Schindler. "GRAINet: Mapping grain size distributions in river beds from UAV images with convolutional neural networks." Hydrology and Earth System Sciences Discussions (2020): 1-38.*
+*Lang, Nico, Andrea Irniger, Agnieszka Rozniak, Roni Hunziker, Jan Dirk Wegner, and Konrad Schindler. "GRAINet: mapping grain size distributions in river beds from UAV images with convolutional neural networks." Hydrology and Earth System Sciences 25, no. 5 (2021): 2567-2597.*
 
 BibTex:
 
 ```
-@article{lang2020grainet,
-  title={GRAINet: Mapping grain size distributions in river beds from UAV images with convolutional neural networks},
+@article{lang2021grainet,
+  title={GRAINet: mapping grain size distributions in river beds from UAV images with convolutional neural networks},
   author={Lang, Nico and Irniger, Andrea and Rozniak, Agnieszka and Hunziker, Roni and Wegner, Jan Dirk and Schindler, Konrad},
-  journal={Hydrology and Earth System Sciences Discussions},
-  pages={1--38},
-  year={2020},
+  journal={Hydrology and Earth System Sciences},
+  volume={25},
+  number={5},
+  pages={2567--2597},
+  year={2021},
   publisher={Copernicus GmbH}
 }
 ```
